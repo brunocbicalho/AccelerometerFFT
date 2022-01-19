@@ -7,6 +7,10 @@
 ////    Este código pode ser adaptado para utilização de um microcontrolador, com leitura em tempo real   ////
 ////      e cálculo FFT em tempo real e processar as informações, enviar dados ou aviso via IOT.          ////
 ////                                                                                                      ////
+////    Para manter simplicidade, não executa filtragem windowing, mas pode ser facilmente implementado   ////
+////                                                                                                      ////
+////    Desenvolvido em C++ via Visual Studio 2019                                                        ////
+////                                                                                                      ////
 ////                                                                                   eng. Bruno Bicalho ////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
