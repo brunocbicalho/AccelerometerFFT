@@ -100,11 +100,11 @@ void arquivo_LeituraCSV(string arquivo, vector<double>* celula1, vector<double>*
 }
 
 void executarFFT(vector<double>* entrada, vector<double>* saida) {
-    //Prepara o vetor para ser utilizad com FFTW
+    //Prepara o vetor para ser utilizado com FFTW
     (*entrada).resize((*entrada).size());
     (*saida).resize((*entrada).size());
 
-
+    //Prepara execução do cálculo FFTW com entrada de números reais (dados RAW acelerômetro) e como resultado números complexos
     fftw_plan p = fftw_plan_dft_r2c_1d((*entrada).size(), (*entrada).data(), reinterpret_cast<fftw_complex*>(((*saida).data())), FFTW_ESTIMATE);
 
     fftw_execute(p);
